@@ -195,7 +195,7 @@
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
     .main-layout {
       flex-direction: column; /* Stacks children vertically */
       padding: 0;
