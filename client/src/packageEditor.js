@@ -56,9 +56,9 @@ const PackageEditor = ({ onClose, state, age, relationshipStatus, packageDetails
     }));
   };
 
-  const shouldShowButtons = (policyDescriptiveName) => {
-    return policyDescriptiveName === 'Cancer Package' || policyDescriptiveName === 'Heart & Stroke Package';
-  };
+  // const shouldShowButtons = (policyDescriptiveName) => {
+  //   return policyDescriptiveName === 'Cancer Package' || policyDescriptiveName === 'Heart & Stroke Package';
+  // };
 
   return (
     <div className="package-editor" style={{ position: 'fixed', top: '10%', left: '25%', backgroundColor: 'white', padding: '20px', zIndex: 100 }}>
