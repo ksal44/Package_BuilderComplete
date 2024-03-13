@@ -59,7 +59,7 @@ const PackageEditor = ({ onClose, state, age, relationshipStatus, packageDetails
   // const shouldShowButtons = (policyDescriptiveName) => {
   //   return policyDescriptiveName === 'Cancer Package' || policyDescriptiveName === 'Heart & Stroke Package';
   // };
-
+//changed above may not need
   return (
     <div className="package-editor" style={{ position: 'fixed', top: '10%', left: '25%', backgroundColor: 'white', padding: '20px', zIndex: 100 }}>
       <h2 className="editor-title">Edit Package: {packageDetails.name}</h2>
