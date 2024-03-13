@@ -18,7 +18,7 @@
     display: flex;
     align-items: left; /* Aligns items vertically */
     padding: 10px; /* Provides some space around the content */
-    background-color: #01080233; 
+    background-color: #00000033; 
     margin: 0;
     width: 100%;/* Adjust text color as needed *//* Or any other color you'd prefer for the header background */
   }
