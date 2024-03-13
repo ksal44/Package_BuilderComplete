@@ -1,0 +1,250 @@
+.whole-page {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 0;
+    overflow-x: hidden; /* Removes any top margin for alignment */
+  }
+
+.main-layout {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: flex-start;
+    overflow-x: hidden; /* Aligns children to the top */
+  }
+
+  .header {
+    display: flex;
+    align-items: left; /* Aligns items vertically */
+    padding: 10px; /* Provides some space around the content */
+    background-color: #01080233; 
+    margin: 0;
+    width: 100%;/* Adjust text color as needed *//* Or any other color you'd prefer for the header background */
+  }
+  
+  .header-logo {
+    height: 10vh; /* Sets the logo height to be 6% of the viewport height */
+    width: auto; /* Maintains the aspect ratio of the image */
+  }
+  
+  .navbar {
+    background-color: #04a033; /* Darker shade for the navbar, adjust as needed */
+    padding: 10px;
+    height: 4vh;
+    width: 100%;
+  }
+  
+  .navbar ul {
+    list-style-type: none;
+    padding: 10px;
+    margin: 3px;
+    display: flex;
+    justify-content: left; /* Center navbar items horizontally */
+    gap: 5vw; /* Adjust the space between navbar items */
+    align-items: center;
+}
+  
+  .navbar a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 1.1em;
+    align-items: center;
+  }
+  
+  .navbar a:hover {
+    text-decoration: underline;
+  }
+  
+  
+  .input-form {
+    order: -1;
+    display: flex;
+    flex-basis: 20%;
+    flex-direction: column;
+    gap: 10px; /* Adjust the space between inputs as needed */
+    padding: 20px;
+    border: 1px solid #ccc; /* Light grey border */
+    border-radius: 10px; /* Rounded edges */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: adds shadow for depth */
+    width: 25%; /* Adjust width as needed */
+    background: white; /* Background color */
+    margin-top: 0;
+  }
+  
+  .input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px; /* Slightly rounded edges for the inputs */
+  }
+  
+  button[type="submit"] {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff; /* Example button color, adjust as needed */
+    color: white;
+    cursor: pointer;
+    margin-top: 10px; /* Adds some space above the button */
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #0056b3; /* Darker shade on hover, adjust as needed */
+  }
+
+  .main-layout {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+  }
+  
+  .package-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers packages within the container */
+    row-gap: 2vh;
+    flex-basis: 45%;/* Space between each package */
+  }
+
+  .best-package{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 45%;
+    border: 2px solid #444; /* Darker border for the box */
+    border-radius: 8px;
+    background-color: rgba(144, 238, 144, 0.6);
+     /* Light Green with transparency */
+  }
+
+  
+  .best-package button {
+    padding: 10px;
+    margin: 1vh; /* Consistent spacing */
+    border-radius: 5px; /* Consistent rounded appearance */
+    background-color: #f7f8f8; /* Example button color, adjust as needed */
+    color: rgb(0, 0, 0); /* Consistent text color */
+    border: none; /* Removes border for a cleaner look */
+    cursor: pointer; /* Ensures it's clear buttons are clickable */
+  }
+
+  /* Hover effect for buttons */
+  .best-package button:hover {
+    background-color: #0056b3;
+  }
+
+
+  .package{
+    border: 2px solid #444; /* Darker border for the box */
+    border-radius: 8px; /* Rounded corners for the box */
+    padding: 20px; /* Padding inside the box */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Slightly darker shadow for depth */
+    background-color: #fff; /* Background color for the box */
+    width: 80%; /* Adjust width to your preference */
+    box-sizing: border-box;
+    margin-top: 0;
+  }
+
+.package-container .package:nth-child(1) {
+    background-color: rgba(205, 127, 50, 0.6); /* Bronze with transparency */
+}
+
+.package-container .package:nth-child(2) {
+    background-color: rgba(192, 192, 192, 0.6); /* Silver with transparency */
+}
+
+.package-container .package:nth-child(3) {
+    background-color: rgba(255, 215, 0, 0.6); /* Gold with transparency */
+}
+
+.package-container .package:nth-child(4) {
+    background-color: #53effa;
+}
+
+  
+  .package-name, .coverage-level {
+    font-weight: bold;
+    align-self: center; /* Make package names and coverage levels bold */
+  }
+  
+  .policy {
+    display: flex; /* Enables Flexbox */
+    justify-content: space-between;
+    flex-direction: row; /* Spaces out the child elements evenly */
+    gap: 5px; /* Adjusts space between each policy info, if needed */
+    margin: 0;
+    border-bottom: 2px solid #ffffff;
+}
+
+.policy-best{
+    display: flex; /* Enables Flexbox */
+    justify-content: space-between;
+    flex-direction: row; /* Spaces out the child elements evenly */
+    gap: 5px; /* Adjusts space between each policy info, if needed */
+    margin: 0;
+    border-bottom: 2px solid #ffffff;
+}
+  
+.policy-info{
+    margin-top: .8vh;
+    font-weight: 500;
+
+}
+
+.best-policy-price {
+
+}
+
+
+@media (max-width: 768px) {
+    .main-layout {
+      flex-direction: column; /* Stacks children vertically */
+      padding: 0;
+      display: flex;
+      justify-content: center; /* Centers children horizontally */
+      align-items: center; 
+      /* Retain other styles  /* Adjust padding as needed */
+    }
+  
+    .input-form, .package-container, .best-package {
+      width: 100%; /* Ensures each element takes up full width */
+      flex-basis: auto; /* Resets any specified flex-basis */
+      margin-top:2vh;
+      margin-left: 2vw; /* Removes any margin that might restrict the width */
+      padding: 10px; /* Adjust padding as needed */
+      box-sizing: border-box; /* Includes padding in the width calculation */
+    }
+  
+    /* You might also want to adjust the gaps and other spacing within these elements for smaller screens */
+    .package, .best-package {
+      padding: 5px; /* Reduces padding for a more compact layout */
+      margin-bottom: 10px;
+      width:95% /* Adds some space between stacked elements */
+    }
+    
+      /* Specific styles for best-package to ensure consistency */
+      .best-package {
+        background-color: #4ca1fc; /* Maintains unique color */
+        padding: 10px; /* Adjust to match other packages if needed */
+        border: 2px solid #444; /* Consistent with other packages */
+        box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Consistent depth effect */
+        border-radius: 8px;
+        max-width: 90%; /* Consistent rounded corners */
+      }
+      
+      /* Adjust button styles within best-package for consistency */
+      .best-package button {
+        padding: 10px;
+        margin-top: 10px; /* Consistent spacing */
+        border-radius: 5px; /* Consistent rounded appearance */
+        background-color: #f7f8f8; /* Example button color, adjust as needed */
+        color: rgb(0, 0, 0); /* Consistent text color */
+        border: none; /* Removes border for a cleaner look */
+        cursor: pointer; /* Ensures it's clear buttons are clickable */
+      }
+    
+      /* Hover effect for buttons */
+      .best-package button:hover {
+        background-color: #0056b3;
+      }
+    
+  }

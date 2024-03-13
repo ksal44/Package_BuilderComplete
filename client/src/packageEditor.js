@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import { buildStateSpecificPackage } from './functions';
 
+
 const PackageEditor = ({ onClose, state, age, relationshipStatus, packageDetails }) => {
     const [policies, setPolicies] = useState(
       packageDetails.policies.map(policy => ({
@@ -66,7 +67,7 @@ const PackageEditor = ({ onClose, state, age, relationshipStatus, packageDetails
         <div key={idx} style={{ marginBottom: '10px' }}>
           <div>
             {policy.policy}: Base Price - ${policy.basePrice}, Price - ${policy.price}
-            {policy.coverageLevel ? `, Coverage Level - ${policy.coverageLevel}` : ''}
+            {policy.coverageLevel ? `, Coverage Level -$ ${policy.coverageLevel}` : ''}
             {!(policy.policy === 'Cancer Package' || policy.policy === 'Heart & Stroke Package') && (
               <input
                 type="checkbox"
