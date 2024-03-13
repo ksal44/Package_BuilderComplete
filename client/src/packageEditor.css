@@ -1,0 +1,109 @@
+.package-editor {
+    position: fixed;
+    top: 10%;
+    left: 25%;
+    width: 50%; /* Adjust width as necessary */
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px; /* Soften the edges */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    z-index: 100; /* Ensure it's above other content */
+    box-sizing: border-box; /* Include padding and border in the width */
+}
+
+.editor-title {
+    margin-bottom: 20px; /* Space between title and content */
+    color: #333; /* Dark grey for text */
+    font-size: 1.5em; /* Slightly larger font size */
+}
+
+.total-price {
+    font-weight: bold; /* Highlight total price */
+    margin-bottom: 15px; /* Space before listing policies */
+}
+
+.policy-item {
+    display: flex; /* Enables Flexbox */
+    justify-content: space-between; /* Aligns children to start and end */
+    align-items: center; /* Vertically aligns items in the center */
+    margin-bottom: 10px;
+    border-bottom: 1px solid #eee; 
+    padding-bottom: 10px; 
+}
+
+.policy-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.policy-header {
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: baseline; /* Align the text baselines for aesthetic alignment */
+  }
+
+.policy-details {
+    flex-grow: 1; 
+    margin-bottom: 5px;
+}
+
+.base-price, .price, .coverage-level, .policy-name {
+    font-weight: bold; /* Highlight the pricing and coverage level */
+  }
+
+.policy-inclusion-checkbox {
+    margin-left: 10px; /* Space between label and checkbox */
+}
+
+.policy-buttons {
+    display: flex; /* Align buttons in a row */
+    gap: 10px; /* Space between buttons */
+}
+
+.policy-pricing {
+    display: flex;
+    flex-direction: column; /* Pricing info below policy name and coverage level */
+  }
+
+.add-state-specific-policies-btn, .close-editor-btn {
+    display: block; /* Ensure full width for touch targets */
+    width: 100%;
+    padding: 10px; /* Adequate padding for touch targets */
+    border: none;
+    border-radius: 4px; /* Match other rounded elements */
+    margin: 20px 0; /* Space above and below */
+    background-color: #007bff; /* A pleasant blue */
+    color: white; /* Text color for contrast */
+    cursor: pointer; /* Indicate clickable */
+}
+
+.add-state-specific-policies-btn:hover, .close-editor-btn:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
+/* Additional styles for input and buttons for consistency */
+input[type="checkbox"], button {
+    cursor: pointer;
+}
+
+button {
+    border: 1px solid #ccc; /* Subtle border */
+    background-color: #f7f7f7; /* Light background */
+    color: #333; /* Dark text for readability */
+}
+
+button:hover {
+    background-color: #e7e7e7; /* Slightly darker on hover */
+}
+
+.policy-buttons, .policy-inclusion-checkbox {
+    align-self: flex-end; /* Align buttons and checkbox to the far right */
+    margin-left: auto; /* Pushes buttons and checkbox to the right */
+  }
+
+  .policy-buttons {
+    display: flex;
+    gap: 10px; /* Space between buttons */
+  }
