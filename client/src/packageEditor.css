@@ -59,7 +59,7 @@
 
 .policy-buttons {
     display: flex; /* Align buttons in a row */
-    gap: 10px; /* Space between buttons */
+    gap: 2px; /* Space between buttons */
 }
 
 .policy-pricing {
@@ -107,3 +107,75 @@ button:hover {
     display: flex;
     gap: 10px; /* Space between buttons */
   }
+
+.incdec-button {
+    padding:10px;
+}
+
+  @media (max-width: 1024px) {
+    .package-editor {
+      top: 0 !important;
+      left: 0 !important;
+      width: 100% !important;
+      height: 100vh !important; /* Full screen height */
+      max-height: 100vh; /* Prevent exceeding the viewport height */
+      padding: 10px !important; /* Adjust padding */
+      border-radius: 0 !important; /* Full-screen view might not need border radius */
+      box-shadow: none !important; /* Optional: might remove shadow in full-screen view */
+      overflow-y: auto; /* Allows scrolling */
+      display: flex;
+      flex-direction: column;
+      align-items: stretch; /* Center content horizontally */
+      justify-content: center; /* Center content vertically */
+    }
+    
+  .editor-title, .total-price {
+    text-align: center; /* Center these titles */
+    padding-bottom: 10px; /* Add some padding at the bottom */
+    border-bottom: 1px solid #ccc; /* Add a separator */
+    margin-bottom: 20px; /* Add some margin at the bottom */
+  }
+
+  .policy-item {
+    /* A bit of margin on the sides for visual padding */
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  .policy-content {
+    display: flex; /* Use flexbox here for inline behavior */
+    justify-content: space-between; /* Separate content and actions */
+  }
+
+  .policy-header, .policy-pricing {
+    text-align: left; /* Align text to the left */
+    margin-bottom: 5px; /* Space after each section */
+  }
+
+  .policy-actions {
+    text-align: right; /* Align buttons and checkbox to the right */
+    margin-top: 10px; /* Space above the buttons */
+  }
+
+  .policy-inclusion-checkbox {
+    /* For larger hit area and visual consistency */
+    width: 20px;
+    height: 20px;
+  }
+
+  .policy-buttons button, .add-state-specific-policies-btn, .close-editor-btn {
+    /* Common styles for all buttons */
+    width: auto; /* Adjust width as necessary */
+    padding: 16px 16px; /* Comfortable touch targets */
+    margin-bottom: 5px; /* Space between buttons */
+    /* Rest of the button styles remain the same */
+  }
+
+  .policy-actions {
+    display: flex; /* Flex container for actions */
+    flex-direction: column; /* Stack buttons and checkboxes */
+    align-items: flex-end; /* Align to the end (right) */
+    margin-top: 5px; /* Space above actions */
+  }
+}
+  

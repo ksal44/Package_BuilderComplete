@@ -92,8 +92,8 @@ const PackageEditor = ({ onClose, state, age, relationshipStatus, packageDetails
               {/* Aligning buttons to the right based on policy name */}
               {(policy.policy === 'Cancer Package' || policy.policy === 'Heart & Stroke Package') && (
                 <>
-                  <button onClick={() => handleIncrement(idx)}>Inc</button>
-                  <button onClick={() => handleDecrement(idx)}>Dec</button>
+                  <button className='incdec-button' onClick={() => handleIncrement(idx)}>Inc</button>
+                  <button className='incdec-button' onClick={() => handleDecrement(idx)}>Dec</button>
                 </>
               )}
             </div>
