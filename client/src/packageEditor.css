@@ -8,7 +8,9 @@
     border-radius: 8px; /* Soften the edges */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
     z-index: 100; /* Ensure it's above other content */
-    box-sizing: border-box; /* Include padding and border in the width */
+    box-sizing: border-box;
+    overflow-y: auto;
+    max-height: 80vh; /* Include padding and border in the width */
 }
 
 .editor-title {

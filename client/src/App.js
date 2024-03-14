@@ -9,12 +9,6 @@ function App() {
       .then(response => response.text())
       .then(message => {
         console.log(message, "app is Listening!!!!!");
-        // const silverPackage = buildSilverPackage('TX', 30, 'Family');
-        // console.log(silverPackage);
-        // const goldPackage = buildGoldPackage('FL', 30, 'Family');
-        // console.log(goldPackage);      
-        // const bronzePackage = buildBronzePackage('TX', 22, 'Individual');
-        // console.log(bronzePackage);
 
 
 
