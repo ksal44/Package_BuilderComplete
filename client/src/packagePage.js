@@ -126,7 +126,7 @@ const PackagePage = () => {
                     </div>
                 )}
 
-                {showEditor && <PackageEditor packageDetails={bestPackageResult} onClose={() => setShowEditor(false)} state={state} relationshipStatus={relationshipStatus} age={age} />}
+                {showEditor && <PackageEditor packageDetails={bestPackageResult} onClose={() => setShowEditor(false)} state={state} relationshipStatus={relationshipStatus} age={age} budget={budget} />}
             </div>
         </div>
     );

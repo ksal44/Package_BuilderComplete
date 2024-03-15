@@ -69,7 +69,7 @@
     flex-direction: column; /* Pricing info below policy name and coverage level */
   }
 
-.add-state-specific-policies-btn, .close-editor-btn {
+.add-state-specific-policies-btn, .close-editor-btn, .save-btn {
     display: block; /* Ensure full width for touch targets */
     width: 100%;
     padding: 10px; /* Adequate padding for touch targets */
