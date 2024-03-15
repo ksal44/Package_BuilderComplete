@@ -225,7 +225,7 @@ const packagePolicies = ['cancerBasePolicyPricing', 'heartStrokePackagePricing',
 
       },
     }
-  };
+  }
 
 export {
   packagePolicies,

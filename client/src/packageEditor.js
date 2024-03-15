@@ -46,10 +46,10 @@ const PackageEditor = ({ onClose, state, age, relationshipStatus, budget, packag
   };
 
   const addStateSpecificPolicies = () => {
-    const { policies: newPolicies, totalCost } = buildStateSpecificPackage(state, age, relationshipStatus);
-    setPolicies([...policies, ...newPolicies]); // Combine with existing policies
-    setTotalPrice(parseFloat((totalPrice + totalCost).toFixed(2)));
-    setAddedStateSpecificPolicies(true);
+    const { policies: newPolicies, totalCost } = buildStateSpecificPackage(state, age, relationshipStatus)
+    setPolicies([...policies, ...newPolicies]) // Combine with existing policies
+    setTotalPrice(parseFloat((totalPrice + totalCost).toFixed(2)))
+    setAddedStateSpecificPolicies(true)
   };
 
   const handleSave = () => {
@@ -77,7 +77,7 @@ const PackageEditor = ({ onClose, state, age, relationshipStatus, budget, packag
         return { ...policy, coverageLevel: updatedCoverageLevel, price: updatedPrice };
       }
       return policy;
-    }));
+    }))
   };
 
 const handleDecrement = (policyIndex) => {
@@ -146,18 +146,18 @@ const handleDecrement = (policyIndex) => {
             </div>
           </div>
         </div>
-      ))};
+      ))}
       {!addedStateSpecificPolicies && (
         <button className="add-state-specific-policies-btn" onClick={addStateSpecificPolicies}>Add State Specific Policies</button>
-      )};
+      )}
       {addedStateSpecificPolicies && (
         <button className="save-btn" onClick={handleSave}>Save</button>
       )}
       <button className="close-editor-btn" onClick={onClose}>Close</button>
       <WarningModal isOpen={showWarning} onClose={() => setShowWarning(false)} message="Warning: Price exceeds Budget" />
     </div>
-  );
+  )
   
-};
+}
 
 export default PackageEditor;

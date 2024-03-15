@@ -257,12 +257,12 @@ export function buildStateSpecificPackage(state, age, relationshipStatus) {
         price: finalPrice,
       };
 
-      policyPackage.push(policyDetail);
+      policyPackage.push(policyDetail)
     }
-  });
+  })
 
-  totalCost = policyPackage.reduce((acc, policy) => acc + policy.price, 0);
-  totalCost = parseFloat(totalCost.toFixed(2));
+  totalCost = policyPackage.reduce((acc, policy) => acc + policy.price, 0)
+  totalCost = parseFloat(totalCost.toFixed(2))
 
   return {
     totalCost: totalCost,
