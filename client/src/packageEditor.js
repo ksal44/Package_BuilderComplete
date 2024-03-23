@@ -97,11 +97,11 @@ const handleDecrement = (policyIndex) => {
         }
       }
 
-      return { ...policy, coverageLevel: updatedCoverageLevel, price: updatedPrice };
+      return { ...policy, coverageLevel: updatedCoverageLevel, price: updatedPrice }
     }
-    return policy;
-  }));
-};
+    return policy
+  }))
+}
 
   // const shouldShowButtons = (policyDescriptiveName) => {
   //   return policyDescriptiveName === 'Cancer Package' || policyDescriptiveName === 'Heart & Stroke Package';

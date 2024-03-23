@@ -59,6 +59,7 @@ const PackagePage = () => {
                         <option value="" disabled>Select State</option>
                         <option value="FL">Florida (FL)</option>
                         <option value="TX">Texas (TX)</option>
+                        <option value="AZ">Arizona (AZ)</option>
                     </select>
                     <input
                         className='input'
@@ -89,14 +90,14 @@ const PackagePage = () => {
                             <div className='package' key={index}> {/* Corrected 'classname' to 'className' */}
                                 <h2 className='package-name'>{result.name} Package</h2>
                                 <div className='coverage-level'>
-  Coverage Level: {new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' }).format(result.coverageLevel)}
-</div>
-                                <div>Total Cost: ${result.totalCost.toFixed(2)}</div>
+                                    Coverage Level: {new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' }).format(result.coverageLevel)}
+                                </div>
+                                <div className='package-cost'>Total Cost: ${result.totalCost.toFixed(2)}</div>
                                 <ul>
                                     {result.policies.map((policy, idx) => (
                                         <li className='policy' key={idx}>
                                             <p className='policy-info'>{policy.policy}</p>
-                                             <p className='policy-info'>Price - ${policy.price.toFixed(2)}</p>
+                                            <p className='policy-info'>Price - ${policy.price.toFixed(2)}</p>
                                         </li>
                                     ))}
                                 </ul>
@@ -108,18 +109,18 @@ const PackagePage = () => {
                     <div className='best-package'>
                         <h2 className='package-name'>Best Package: {bestPackageResult.name}</h2>
                         <div className='coverage-level'>
-  Coverage Level: {new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' }).format(bestPackageResult.coverageLevel)}
-</div>
-                        <div className='coverage-level'>Total Cost: ${bestPackageResult.totalCost.toFixed(2)}</div>
+                            Coverage Level: {new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' }).format(bestPackageResult.coverageLevel)}
+                        </div>
+                        <div className='package-cost'>Total Cost: ${bestPackageResult.totalCost.toFixed(2)}</div>
                         <ul>
                             {bestPackageResult.policies.map((policy, idx) => (
                                 <li className='policy-best' key={idx}>
                                     <p className='policy-info'>{policy.policy}:</p>
                                     <div className='best-policy-price'>
-                                    <p className='policy-info'>Base Price - ${policy.basePrice.toFixed(2)}</p>
-                                    <p className='policy-info'>Price - ${policy.price.toFixed(2)}</p>
+                                        <p className='policy-info'>Base Price - ${policy.basePrice.toFixed(2)}</p>
+                                        <p className='policy-info'>Price - ${policy.price.toFixed(2)}</p>
                                     </div>
-                                    </li>
+                                </li>
                             ))}
                         </ul>
                         <button onClick={() => setShowEditor(true)}>Edit Package</button>

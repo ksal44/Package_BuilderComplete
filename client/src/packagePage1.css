@@ -182,12 +182,19 @@
     gap: 5px; /* Adjusts space between each policy info, if needed */
     margin: 0;
     border-bottom: 2px solid #ffffff;
+    padding-right: 2vw;
+    margin-right: 20px;
 }
   
 .policy-info{
     margin-top: .8vh;
     font-weight: 500;
 
+}
+
+.package-cost{
+  font-weight: bold;
+  align-self: center;
 }
 
 .best-policy-price {
@@ -228,7 +235,8 @@
         border: 2px solid #444; /* Consistent with other packages */
         box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Consistent depth effect */
         border-radius: 8px;
-        max-width: 90%; /* Consistent rounded corners */
+        max-width: 90%;
+        padding-right: 1vw; /* Consistent rounded corners */
       }
       
       /* Adjust button styles within best-package for consistency */
