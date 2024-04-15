@@ -57,9 +57,15 @@ const PackagePage = () => {
                 <form className='input-form' onSubmit={handleSubmit}>
                     <select className='input' value={state} onChange={(e) => setState(e.target.value)}>
                         <option value="" disabled>Select State</option>
-                        <option value="FL">Florida (FL)</option>
-                        <option value="TX">Texas (TX)</option>
+                        <option value="AL">Alabama (AL)</option>
                         <option value="AZ">Arizona (AZ)</option>
+                        <option value="FL">Florida (FL)</option>
+                        <option value="GA">Georgia (GA)</option>
+                        <option value="IA">Iowa (IA)</option>
+                        <option value="TX">Texas (TX)</option>                   
+                        <option value="LA">Lousiana (LA)</option>
+                        <option value="MS">Mississippi (MS)</option>
+                        
                     </select>
                     <input
                         className='input'
