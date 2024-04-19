@@ -203,7 +203,7 @@ export function buildDiamondPackage(state, age, relationshipStatus) {
     };
 
     if (policyName === 'cancerPackagePricing' || policyName === 'heartStrokePackagePricing') {
-      policyDetail.coverageLevel = 50000;
+      policyDetail.coverageLevel = 75000;
     }
 
     policyPackage.push(policyDetail);
