@@ -110,7 +110,7 @@ const handleDecrement = (policyIndex) => {
   return (
     <div className="package-editor" style={{ position: 'fixed', top: '10%', left: '25%', backgroundColor: 'white', padding: '20px', zIndex: 100 }}>
       <h2 className="editor-title">Edit Package: {packageDetails.name}</h2>
-      <div className="total-price">Total Price: ${totalPrice}</div>
+      <div className="total-price">Total Price: {new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' }).format(totalPrice)}</div>
       {policies.map((policy, idx) => (
         <div className="policy-item" key={idx} style={{ marginBottom: '10px' }}>
           <div className="policy-content">
@@ -119,12 +119,12 @@ const handleDecrement = (policyIndex) => {
               <div className="policy-header">
                 <span className="policy-name">{policy.policy}:</span>
                 {policy.coverageLevel && (
-                  <span className="coverage-level"> Coverage Level - ${policy.coverageLevel}</span>
+                  <span className="coverage-level"> Coverage Level - {new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' }).format(policy.coverageLevel)}</span>                 
                 )}
               </div>
               {/* Pricing information on a new line below policy name and coverage level */}
               <div className="policy-pricing">
-                Price: <span className="price">${policy.price}</span>
+                Price: <span className="price">{new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' }).format(policy.price)}</span>
               </div>
             </div>
             <div className="policy-actions">
