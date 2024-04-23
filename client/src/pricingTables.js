@@ -5,7 +5,7 @@ const stateBasedPricing = {
   FL: {
     cancerPackagePricing: {
       name: "Cancer Package",
-      note: "Only choose one Out-of-Pocket option.",
+      note: "Only Available if not using Group Cancer Plan",
       "20-24": { "Individual": 4.15, "IndividualAndSpouse": 6.90, "OneParent": 4.7, "Family": 7.70 },
       "25-29": { "Individual": 4.70, "IndividualAndSpouse": 7.70, "OneParent": 5.25, "Family": 8.55 },
       "30-34": { "Individual": 5.50, "IndividualAndSpouse": 9.10, "OneParent": 6.05, "Family": 9.90 },
@@ -40,7 +40,7 @@ const stateBasedPricing = {
 
     heartStrokePackagePricing: {
       name: 'Heart & Stroke Package',
-      note: "Only choose one Out-of-Pocket option.",
+      note: "Only Available if not using Group Heart & Stroke Plan",
       '20-24': { 'Individual': 4.15, 'IndividualAndSpouse': 6.9, 'OneParent': 4.7, 'Family': 7.7 },
       '25-29': { 'Individual': 4.95, 'IndividualAndSpouse': 8.25, 'OneParent': 5.5, 'Family': 9.1 },
       '30-34': { 'Individual': 6.05, 'IndividualAndSpouse': 10.2, 'OneParent': 6.6, 'Family': 11.0 },
@@ -159,7 +159,7 @@ const stateBasedPricing = {
 
     cancerPackagePricing: {
       name: 'Cancer Package',
-      note: "Only choose one Out-of-Pocket option.",
+      note: "Only Available if not using Group Cancer Plan",
       "20-24": { "Individual": 4.05, "IndividualAndSpouse": 6.75, "OneParent": 4.60, "Family": 7.60 },
       "25-29": { "Individual": 4.30, "IndividualAndSpouse": 7.5, "OneParent": 5.10, "Family": 8.35 },
       "30-34": { "Individual": 5.30, "IndividualAndSpouse": 8.75, "OneParent": 5.85, "Family": 9.60 },
@@ -191,7 +191,7 @@ const stateBasedPricing = {
 
     heartStrokePackagePricing: {
       name: 'Heart & Stroke Package',
-      note: "Only choose one Out-of-Pocket option.",
+      note: "Only Available if not using Group Heart & Stroke Plan",
       "20-39": { "Individual": 3.85, "IndividualAndSpouse": 6.35, "OneParent": 4.15, "Family": 6.60 },
       "40-44": { "Individual": 5.25, "IndividualAndSpouse": 8.80, "OneParent": 5.5, "Family": 9.10 },
       "45-49": { "Individual": 6.90, "IndividualAndSpouse": 11.85, "OneParent": 7.15, "Family": 12.15 },
@@ -302,7 +302,7 @@ const stateBasedPricing = {
 
     cancerPackagePricing: {
       name: 'Cancer Package',
-      note: "Only choose one Out-of-Pocket option.",
+      note: "Only Available if not using Group Cancer Plan",
       "20-39": { "Individual": 4.05, "IndividualAndSpouse": 6.75, "OneParent": 4.60, "Family": 7.60 },
       "40-44": { "Individual": 5.15, "IndividualAndSpouse": 8.95, "OneParent": 5.95, "Family": 9.75 },
       "45-49": { "Individual": 6.80, "IndividualAndSpouse": 11.90, "OneParent": 7.30, "Family": 12.45 },
@@ -392,7 +392,7 @@ const stateBasedPricing = {
     //cancer and heart same as AZ
     cancerPackagePricing: {
       name: 'Cancer Package',
-      note: "Only choose one Out-of-Pocket option.",
+      note: "Only Available if not using Group Cancer Plan",
       "20-39": { "Individual": 4.05, "IndividualAndSpouse": 6.75, "OneParent": 4.60, "Family": 7.60 },
       "40-44": { "Individual": 5.15, "IndividualAndSpouse": 8.95, "OneParent": 5.95, "Family": 9.75 },
       "45-49": { "Individual": 6.80, "IndividualAndSpouse": 11.90, "OneParent": 7.30, "Family": 12.45 },
@@ -469,88 +469,88 @@ const stateBasedPricing = {
     },
   },
   AL: {
-        //cancer heart DVH and accident same as LA
-        cancerPackagePricing: {
-          name: 'Cancer Package',
-          note: "Only choose one Out-of-Pocket option.",
-          "20-39": { "Individual": 4.05, "IndividualAndSpouse": 6.75, "OneParent": 4.60, "Family": 7.60 },
-          "40-44": { "Individual": 5.15, "IndividualAndSpouse": 8.95, "OneParent": 5.95, "Family": 9.75 },
-          "45-49": { "Individual": 6.80, "IndividualAndSpouse": 11.90, "OneParent": 7.30, "Family": 12.45 },
-          "50-54": { "Individual": 8.95, "IndividualAndSpouse": 15.45, "OneParent": 9.20, "Family": 16.20 },
-          "55-59": { "Individual": 10.50, "IndividualAndSpouse": 18.50, "OneParent": 11.00, "Family": 19.5 },
-          "60-64": { "Individual": 13.25, "IndividualAndSpouse": 23.25, "OneParent": 13.50, "Family": 23.75 },
-          "65-69": { "Individual": 16.00, "IndividualAndSpouse": 28.00, "OneParent": 16.25, "Family": 28.5 },
-          "70-74": { "Individual": 18.25, "IndividualAndSpouse": 32.00, "OneParent": 18.50, "Family": 32.25 },
-          "75-79": { "Individual": 18.75, "IndividualAndSpouse": 33.00, "OneParent": 19.00, "Family": 33.25 },
-          "80-84": { "Individual": 19.25, "IndividualAndSpouse": 33.75, "OneParent": 19.50, "Family": 34.0 }
-        },
-        heartStrokePackagePricing: {
-          name: 'Heart & Stroke Package',
-          "20-39": { "Individual": 3.85, "IndividualAndSpouse": 6.35, "OneParent": 4.15, "Family": 6.60 },
-          "40-44": { "Individual": 5.25, "IndividualAndSpouse": 8.80, "OneParent": 5.50, "Family": 9.10 },
-          "45-49": { "Individual": 6.90, "IndividualAndSpouse": 11.85, "OneParent": 7.15, "Family": 12.15 },
-          "50-54": { "Individual": 8.80, "IndividualAndSpouse": 15.40, "OneParent": 9.10, "Family": 15.70 },
-          "55-59": { "Individual": 10.25, "IndividualAndSpouse": 18.00, "OneParent": 10.50, "Family": 18.25 },
-          "60-64": { "Individual": 13.25, "IndividualAndSpouse": 23.25, "OneParent": 13.50, "Family": 23.50 },
-          "65-69": { "Individual": 16.75, "IndividualAndSpouse": 29.50, "OneParent": 17.00, "Family": 29.75 },
-          "70-74": { "Individual": 21.25, "IndividualAndSpouse": 37.50, "OneParent": 21.50, "Family": 37.75 },
-          "75-79": { "Individual": 26.00, "IndividualAndSpouse": 46.00, "OneParent": 26.25, "Family": 46.25 },
-          "80-84": { "Individual": 30.50, "IndividualAndSpouse": 53.75, "OneParent": 30.75, "Family": 54.00 }
-        },
+    //cancer heart DVH and accident same as LA
+    cancerPackagePricing: {
+      name: 'Cancer Package',
+      note: "Only Available if not using Group Cancer Plan",
+      "20-39": { "Individual": 4.05, "IndividualAndSpouse": 6.75, "OneParent": 4.60, "Family": 7.60 },
+      "40-44": { "Individual": 5.15, "IndividualAndSpouse": 8.95, "OneParent": 5.95, "Family": 9.75 },
+      "45-49": { "Individual": 6.80, "IndividualAndSpouse": 11.90, "OneParent": 7.30, "Family": 12.45 },
+      "50-54": { "Individual": 8.95, "IndividualAndSpouse": 15.45, "OneParent": 9.20, "Family": 16.20 },
+      "55-59": { "Individual": 10.50, "IndividualAndSpouse": 18.50, "OneParent": 11.00, "Family": 19.5 },
+      "60-64": { "Individual": 13.25, "IndividualAndSpouse": 23.25, "OneParent": 13.50, "Family": 23.75 },
+      "65-69": { "Individual": 16.00, "IndividualAndSpouse": 28.00, "OneParent": 16.25, "Family": 28.5 },
+      "70-74": { "Individual": 18.25, "IndividualAndSpouse": 32.00, "OneParent": 18.50, "Family": 32.25 },
+      "75-79": { "Individual": 18.75, "IndividualAndSpouse": 33.00, "OneParent": 19.00, "Family": 33.25 },
+      "80-84": { "Individual": 19.25, "IndividualAndSpouse": 33.75, "OneParent": 19.50, "Family": 34.0 }
+    },
+    heartStrokePackagePricing: {
+      name: 'Heart & Stroke Package',
+      "20-39": { "Individual": 3.85, "IndividualAndSpouse": 6.35, "OneParent": 4.15, "Family": 6.60 },
+      "40-44": { "Individual": 5.25, "IndividualAndSpouse": 8.80, "OneParent": 5.50, "Family": 9.10 },
+      "45-49": { "Individual": 6.90, "IndividualAndSpouse": 11.85, "OneParent": 7.15, "Family": 12.15 },
+      "50-54": { "Individual": 8.80, "IndividualAndSpouse": 15.40, "OneParent": 9.10, "Family": 15.70 },
+      "55-59": { "Individual": 10.25, "IndividualAndSpouse": 18.00, "OneParent": 10.50, "Family": 18.25 },
+      "60-64": { "Individual": 13.25, "IndividualAndSpouse": 23.25, "OneParent": 13.50, "Family": 23.50 },
+      "65-69": { "Individual": 16.75, "IndividualAndSpouse": 29.50, "OneParent": 17.00, "Family": 29.75 },
+      "70-74": { "Individual": 21.25, "IndividualAndSpouse": 37.50, "OneParent": 21.50, "Family": 37.75 },
+      "75-79": { "Individual": 26.00, "IndividualAndSpouse": 46.00, "OneParent": 26.25, "Family": 46.25 },
+      "80-84": { "Individual": 30.50, "IndividualAndSpouse": 53.75, "OneParent": 30.75, "Family": 54.00 }
+    },
 
-        accidentWithWellness1Pricing: {
-          name: 'Paid Accident 1 Unit',
-          note: "Only choose one Accident option.",
-          "18-69": { "Individual": 21.33, "IndividualAndSpouse": 31.83, "OneParent": 31.83, "Family": 42.33 }
-        },
-        accidentWithWellness2Pricing: {
-          name: 'Paid Accident 2 Units',
-          note: "Only choose one Accident option.",
-          "18-69": { "Individual": 25.00, "IndividualAndSpouse": 38.00, "OneParent": 38.00, "Family": 51.00 }
-        },
+    accidentWithWellness1Pricing: {
+      name: 'Paid Accident 1 Unit',
+      note: "Only choose one Accident option.",
+      "18-69": { "Individual": 21.33, "IndividualAndSpouse": 31.83, "OneParent": 31.83, "Family": 42.33 }
+    },
+    accidentWithWellness2Pricing: {
+      name: 'Paid Accident 2 Units',
+      note: "Only choose one Accident option.",
+      "18-69": { "Individual": 25.00, "IndividualAndSpouse": 38.00, "OneParent": 38.00, "Family": 51.00 }
+    },
 
-        dentalVisionHearing1Pricing: {
-          name: "DVH $1,000 Max",
-          note: "Choose one DVH option.",
-          "18-39": { "Individual": 30.24, "IndividualAndSpouse": 96.79, "OneParent": 96.79, "Family": 96.79 },
-          "40-54": { "Individual": 32.74, "IndividualAndSpouse": 101.63, "OneParent": 101.63, "Family": 101.63 },
-          "55-64": { "Individual": 35.07, "IndividualAndSpouse": 106.54, "OneParent": 106.54, "Family": 106.54 },
-          "65-74": { "Individual": 37.57, "IndividualAndSpouse": 111.37, "OneParent": 111.37, "Family": 111.37 },
-          "75-85": { "Individual": 43.15, "IndividualAndSpouse": 128.03, "OneParent": 128.03, "Family": 128.03 },
-        },
-        dentalVisionHearing2Pricing: {
-          name: "DVH $1,500 Max",
-          note: "Choose one DVH option.",
-          "18-39": { "Individual": 39.98, "IndividualAndSpouse": 127.70, "OneParent": 127.70, "Family": 127.70 },
-          "40-54": { "Individual": 42.40, "IndividualAndSpouse": 132.61, "OneParent": 132.61, "Family": 132.61 },
-          "55-64": { "Individual": 45.98, "IndividualAndSpouse": 139.86, "OneParent": 139.86, "Family": 139.86 },
-          "65-74": { "Individual": 49.65, "IndividualAndSpouse": 147.11, "OneParent": 147.11, "Family": 147.11 },
-          "75-85": { "Individual": 57.06, "IndividualAndSpouse": 169.18, "OneParent": 169.18, "Family": 169.18 },
-        },
-        dentalVisionHearing3Pricing: {
-          name: "DVH $3,000 Max",
-          note: "Choose one DVH option.",
-          "18-39": { "Individual": 48.15, "IndividualAndSpouse": 154.19, "OneParent": 154.19, "Family": 154.19 },
-          "40-54": { "Individual": 52.23, "IndividualAndSpouse": 159.85, "OneParent": 159.85, "Family": 159.85 },
-          "55-64": { "Individual": 59.56, "IndividualAndSpouse": 172.60, "OneParent": 172.60, "Family": 172.60 },
-          "65-74": { "Individual": 64.39, "IndividualAndSpouse": 190.59, "OneParent": 190.59, "Family": 190.59 },
-          "75-85": { "Individual": 74.05, "IndividualAndSpouse": 219.50, "OneParent": 219.50, "Family": 219.50 },
-        },
-        dentalVisionHearing4Pricing: {
-          name: "DVH $5,000 Max",
-          note: "Choose one DVH option.",
-          "18-39": { "Individual": 60.64, "IndividualAndSpouse": 199.09, "OneParent": 199.09, "Family": 199.09 },
-          "40-54": { "Individual": 65.56, "IndividualAndSpouse": 208.92, "OneParent": 208.92, "Family": 208.92 },
-          "55-64": { "Individual": 73.72, "IndividualAndSpouse": 225.24, "OneParent": 225.24, "Family": 225.24 },
-          "65-74": { "Individual": 78.97, "IndividualAndSpouse": 235.74, "OneParent": 235.74, "Family": 235.74 },
-          "75-85": { "Individual": 88.63, "IndividualAndSpouse": 255.06, "OneParent": 255.06, "Family": 255.06 },
-        },
+    dentalVisionHearing1Pricing: {
+      name: "DVH $1,000 Max",
+      note: "Choose one DVH option.",
+      "18-39": { "Individual": 30.24, "IndividualAndSpouse": 96.79, "OneParent": 96.79, "Family": 96.79 },
+      "40-54": { "Individual": 32.74, "IndividualAndSpouse": 101.63, "OneParent": 101.63, "Family": 101.63 },
+      "55-64": { "Individual": 35.07, "IndividualAndSpouse": 106.54, "OneParent": 106.54, "Family": 106.54 },
+      "65-74": { "Individual": 37.57, "IndividualAndSpouse": 111.37, "OneParent": 111.37, "Family": 111.37 },
+      "75-85": { "Individual": 43.15, "IndividualAndSpouse": 128.03, "OneParent": 128.03, "Family": 128.03 },
+    },
+    dentalVisionHearing2Pricing: {
+      name: "DVH $1,500 Max",
+      note: "Choose one DVH option.",
+      "18-39": { "Individual": 39.98, "IndividualAndSpouse": 127.70, "OneParent": 127.70, "Family": 127.70 },
+      "40-54": { "Individual": 42.40, "IndividualAndSpouse": 132.61, "OneParent": 132.61, "Family": 132.61 },
+      "55-64": { "Individual": 45.98, "IndividualAndSpouse": 139.86, "OneParent": 139.86, "Family": 139.86 },
+      "65-74": { "Individual": 49.65, "IndividualAndSpouse": 147.11, "OneParent": 147.11, "Family": 147.11 },
+      "75-85": { "Individual": 57.06, "IndividualAndSpouse": 169.18, "OneParent": 169.18, "Family": 169.18 },
+    },
+    dentalVisionHearing3Pricing: {
+      name: "DVH $3,000 Max",
+      note: "Choose one DVH option.",
+      "18-39": { "Individual": 48.15, "IndividualAndSpouse": 154.19, "OneParent": 154.19, "Family": 154.19 },
+      "40-54": { "Individual": 52.23, "IndividualAndSpouse": 159.85, "OneParent": 159.85, "Family": 159.85 },
+      "55-64": { "Individual": 59.56, "IndividualAndSpouse": 172.60, "OneParent": 172.60, "Family": 172.60 },
+      "65-74": { "Individual": 64.39, "IndividualAndSpouse": 190.59, "OneParent": 190.59, "Family": 190.59 },
+      "75-85": { "Individual": 74.05, "IndividualAndSpouse": 219.50, "OneParent": 219.50, "Family": 219.50 },
+    },
+    dentalVisionHearing4Pricing: {
+      name: "DVH $5,000 Max",
+      note: "Choose one DVH option.",
+      "18-39": { "Individual": 60.64, "IndividualAndSpouse": 199.09, "OneParent": 199.09, "Family": 199.09 },
+      "40-54": { "Individual": 65.56, "IndividualAndSpouse": 208.92, "OneParent": 208.92, "Family": 208.92 },
+      "55-64": { "Individual": 73.72, "IndividualAndSpouse": 225.24, "OneParent": 225.24, "Family": 225.24 },
+      "65-74": { "Individual": 78.97, "IndividualAndSpouse": 235.74, "OneParent": 235.74, "Family": 235.74 },
+      "75-85": { "Individual": 88.63, "IndividualAndSpouse": 255.06, "OneParent": 255.06, "Family": 255.06 },
+    },
   },
   MS: {
     //accident cancer and heart same as AL
     cancerPackagePricing: {
       name: 'Cancer Package',
-      note: "Only choose one Out-of-Pocket option.",
+      note: "Only Available if not using Group Cancer Plan",
       "20-39": { "Individual": 4.05, "IndividualAndSpouse": 6.75, "OneParent": 4.60, "Family": 7.60 },
       "40-44": { "Individual": 5.15, "IndividualAndSpouse": 8.95, "OneParent": 5.95, "Family": 9.75 },
       "45-49": { "Individual": 6.80, "IndividualAndSpouse": 11.90, "OneParent": 7.30, "Family": 12.45 },
@@ -629,7 +629,7 @@ const stateBasedPricing = {
     //dvh = al, la, tx and chas = AL, LA
     cancerPackagePricing: {
       name: 'Cancer Package',
-      note: "Only choose one Out-of-Pocket option.",
+      note: "Only Available if not using Group Cancer Plan",
       "20-39": { "Individual": 4.05, "IndividualAndSpouse": 6.75, "OneParent": 4.60, "Family": 7.60 },
       "40-44": { "Individual": 5.15, "IndividualAndSpouse": 8.95, "OneParent": 5.95, "Family": 9.75 },
       "45-49": { "Individual": 6.80, "IndividualAndSpouse": 11.90, "OneParent": 7.30, "Family": 12.45 },
@@ -704,82 +704,236 @@ const stateBasedPricing = {
     },
   },
   IA: {
-        //dvh = al, la, tx and chas = AL, LA, GA
-        cancerPackagePricing: {
-          name: 'Cancer Package',
-          note: "Only choose one Out-of-Pocket option.",
-          "20-39": { "Individual": 4.05, "IndividualAndSpouse": 6.75, "OneParent": 4.60, "Family": 7.60 },
-          "40-44": { "Individual": 5.15, "IndividualAndSpouse": 8.95, "OneParent": 5.95, "Family": 9.75 },
-          "45-49": { "Individual": 6.80, "IndividualAndSpouse": 11.90, "OneParent": 7.30, "Family": 12.45 },
-          "50-54": { "Individual": 8.95, "IndividualAndSpouse": 15.45, "OneParent": 9.20, "Family": 16.20 },
-          "55-59": { "Individual": 10.50, "IndividualAndSpouse": 18.50, "OneParent": 11.00, "Family": 19.5 },
-          "60-64": { "Individual": 13.25, "IndividualAndSpouse": 23.25, "OneParent": 13.50, "Family": 23.75 },
-          "65-69": { "Individual": 16.00, "IndividualAndSpouse": 28.00, "OneParent": 16.25, "Family": 28.5 },
-          "70-74": { "Individual": 18.25, "IndividualAndSpouse": 32.00, "OneParent": 18.50, "Family": 32.25 },
-          "75-79": { "Individual": 18.75, "IndividualAndSpouse": 33.00, "OneParent": 19.00, "Family": 33.25 },
-          "80-84": { "Individual": 19.25, "IndividualAndSpouse": 33.75, "OneParent": 19.50, "Family": 34.0 }
-        },
-        heartStrokePackagePricing: {
-          name: 'Heart & Stroke Package',
-          "20-39": { "Individual": 3.85, "IndividualAndSpouse": 6.35, "OneParent": 4.15, "Family": 6.60 },
-          "40-44": { "Individual": 5.25, "IndividualAndSpouse": 8.80, "OneParent": 5.50, "Family": 9.10 },
-          "45-49": { "Individual": 6.90, "IndividualAndSpouse": 11.85, "OneParent": 7.15, "Family": 12.15 },
-          "50-54": { "Individual": 8.80, "IndividualAndSpouse": 15.40, "OneParent": 9.10, "Family": 15.70 },
-          "55-59": { "Individual": 10.25, "IndividualAndSpouse": 18.00, "OneParent": 10.50, "Family": 18.25 },
-          "60-64": { "Individual": 13.25, "IndividualAndSpouse": 23.25, "OneParent": 13.50, "Family": 23.50 },
-          "65-69": { "Individual": 16.75, "IndividualAndSpouse": 29.50, "OneParent": 17.00, "Family": 29.75 },
-          "70-74": { "Individual": 21.25, "IndividualAndSpouse": 37.50, "OneParent": 21.50, "Family": 37.75 },
-          "75-79": { "Individual": 26.00, "IndividualAndSpouse": 46.00, "OneParent": 26.25, "Family": 46.25 },
-          "80-84": { "Individual": 30.50, "IndividualAndSpouse": 53.75, "OneParent": 30.75, "Family": 54.00 }
-        },
+    //dvh = al, la, tx and chas = AL, LA, GA
+    cancerPackagePricing: {
+      name: 'Cancer Package',
+      note: "Only Available if not using Group Cancer Plan",
+      "20-39": { "Individual": 4.05, "IndividualAndSpouse": 6.75, "OneParent": 4.60, "Family": 7.60 },
+      "40-44": { "Individual": 5.15, "IndividualAndSpouse": 8.95, "OneParent": 5.95, "Family": 9.75 },
+      "45-49": { "Individual": 6.80, "IndividualAndSpouse": 11.90, "OneParent": 7.30, "Family": 12.45 },
+      "50-54": { "Individual": 8.95, "IndividualAndSpouse": 15.45, "OneParent": 9.20, "Family": 16.20 },
+      "55-59": { "Individual": 10.50, "IndividualAndSpouse": 18.50, "OneParent": 11.00, "Family": 19.5 },
+      "60-64": { "Individual": 13.25, "IndividualAndSpouse": 23.25, "OneParent": 13.50, "Family": 23.75 },
+      "65-69": { "Individual": 16.00, "IndividualAndSpouse": 28.00, "OneParent": 16.25, "Family": 28.5 },
+      "70-74": { "Individual": 18.25, "IndividualAndSpouse": 32.00, "OneParent": 18.50, "Family": 32.25 },
+      "75-79": { "Individual": 18.75, "IndividualAndSpouse": 33.00, "OneParent": 19.00, "Family": 33.25 },
+      "80-84": { "Individual": 19.25, "IndividualAndSpouse": 33.75, "OneParent": 19.50, "Family": 34.0 }
+    },
+    heartStrokePackagePricing: {
+      name: 'Heart & Stroke Package',
+      "20-39": { "Individual": 3.85, "IndividualAndSpouse": 6.35, "OneParent": 4.15, "Family": 6.60 },
+      "40-44": { "Individual": 5.25, "IndividualAndSpouse": 8.80, "OneParent": 5.50, "Family": 9.10 },
+      "45-49": { "Individual": 6.90, "IndividualAndSpouse": 11.85, "OneParent": 7.15, "Family": 12.15 },
+      "50-54": { "Individual": 8.80, "IndividualAndSpouse": 15.40, "OneParent": 9.10, "Family": 15.70 },
+      "55-59": { "Individual": 10.25, "IndividualAndSpouse": 18.00, "OneParent": 10.50, "Family": 18.25 },
+      "60-64": { "Individual": 13.25, "IndividualAndSpouse": 23.25, "OneParent": 13.50, "Family": 23.50 },
+      "65-69": { "Individual": 16.75, "IndividualAndSpouse": 29.50, "OneParent": 17.00, "Family": 29.75 },
+      "70-74": { "Individual": 21.25, "IndividualAndSpouse": 37.50, "OneParent": 21.50, "Family": 37.75 },
+      "75-79": { "Individual": 26.00, "IndividualAndSpouse": 46.00, "OneParent": 26.25, "Family": 46.25 },
+      "80-84": { "Individual": 30.50, "IndividualAndSpouse": 53.75, "OneParent": 30.75, "Family": 54.00 }
+    },
 
-        accidentWithWellness1Pricing: {
-          name: 'Paid Accident 1 Unit',
-          note: "Only choose one Accident option.",
-          "18-69": { "Individual": 21.33, "IndividualAndSpouse": 31.83, "OneParent": 31.83, "Family": 42.33 }
-        },
-        accidentWithWellness2Pricing: {
-          name: 'Paid Accident 2 Units',
-          note: "Only choose one Accident option.",
-          "18-69": { "Individual": 25.00, "IndividualAndSpouse": 38.00, "OneParent": 38.00, "Family": 51.00 }
-        },
+    accidentWithWellness1Pricing: {
+      name: 'Paid Accident 1 Unit',
+      note: "Only choose one Accident option.",
+      "18-69": { "Individual": 21.33, "IndividualAndSpouse": 31.83, "OneParent": 31.83, "Family": 42.33 }
+    },
+    accidentWithWellness2Pricing: {
+      name: 'Paid Accident 2 Units',
+      note: "Only choose one Accident option.",
+      "18-69": { "Individual": 25.00, "IndividualAndSpouse": 38.00, "OneParent": 38.00, "Family": 51.00 }
+    },
 
-        dentalVisionHearing1Pricing: {
-          name: "DVH $1,000 Max",
-          note: "Choose one DVH option.",
-          "18-39": { "Individual": 33.15, "IndividualAndSpouse": 106.04, "OneParent": 106.04, "Family": 106.04 },
-          "40-54": { "Individual": 35.90, "IndividualAndSpouse": 111.29, "OneParent": 111.29, "Family": 111.29 },
-          "55-64": { "Individual": 38.40, "IndividualAndSpouse": 116.70, "OneParent": 116.70, "Family": 116.70 },
-          "65-74": { "Individual": 41.15, "IndividualAndSpouse": 122.03, "OneParent": 122.03, "Family": 122.03 },
-          "75-85": { "Individual": 47.31, "IndividualAndSpouse": 140.28, "OneParent": 140.28, "Family": 140.28 },
-        },
-        dentalVisionHearing2Pricing: {
-          name: "DVH $1,500 Max",
-          note: "Choose one DVH option.",
-          "18-39": { "Individual": 43.82, "IndividualAndSpouse": 139.86, "OneParent": 139.86, "Family": 139.86 },
-          "40-54": { "Individual": 46.48, "IndividualAndSpouse": 145.28, "OneParent": 145.28, "Family": 145.28 },
-          "55-64": { "Individual": 50.40, "IndividualAndSpouse": 153.19, "OneParent": 153.19, "Family": 153.19 },
-          "65-74": { "Individual": 54.39, "IndividualAndSpouse": 161.10, "OneParent": 161.10, "Family": 161.10 },
-          "75-85": { "Individual": 62.56, "IndividualAndSpouse": 185.26, "OneParent": 185.26, "Family": 185.26 },
-        },
-        dentalVisionHearing3Pricing: {
-          name: "DVH $3,000 Max",
-          note: "Choose one DVH option.",
-          "18-39": { "Individual": 52.73, "IndividualAndSpouse": 168.85, "OneParent": 168.85, "Family": 168.85 },
-          "40-54": { "Individual": 57.23, "IndividualAndSpouse": 175.10, "OneParent": 175.10, "Family": 175.10 },
-          "55-64": { "Individual": 65.22, "IndividualAndSpouse": 189.01, "OneParent": 189.01, "Family": 189.01 },
-          "65-74": { "Individual": 70.56, "IndividualAndSpouse": 208.75, "OneParent": 208.75, "Family": 208.75 },
-          "75-85": { "Individual": 81.13, "IndividualAndSpouse": 240.40, "OneParent": 240.40, "Family": 240.40 },
-        },
-        dentalVisionHearing4Pricing: {
-          name: "DVH $5,000 Max",
-          note: "Choose one DVH option.",
-          "18-39": { "Individual": 65.22, "IndividualAndSpouse": 213.91, "OneParent": 213.91, "Family": 213.91 },
-          "40-54": { "Individual": 70.56, "IndividualAndSpouse": 224.58, "OneParent": 224.58, "Family": 224.58 },
-          "55-64": { "Individual": 79.38, "IndividualAndSpouse": 242.24, "OneParent": 242.24, "Family": 242.24 },
-          "65-74": { "Individual": 85.13, "IndividualAndSpouse": 253.73, "OneParent": 253.73, "Family": 253.73 },
-          "75-85": { "Individual": 95.71, "IndividualAndSpouse": 274.89, "OneParent": 274.89, "Family": 274.89 },
-        },
+    dentalVisionHearing1Pricing: {
+      name: "DVH $1,000 Max",
+      note: "Choose one DVH option.",
+      "18-39": { "Individual": 33.15, "IndividualAndSpouse": 106.04, "OneParent": 106.04, "Family": 106.04 },
+      "40-54": { "Individual": 35.90, "IndividualAndSpouse": 111.29, "OneParent": 111.29, "Family": 111.29 },
+      "55-64": { "Individual": 38.40, "IndividualAndSpouse": 116.70, "OneParent": 116.70, "Family": 116.70 },
+      "65-74": { "Individual": 41.15, "IndividualAndSpouse": 122.03, "OneParent": 122.03, "Family": 122.03 },
+      "75-85": { "Individual": 47.31, "IndividualAndSpouse": 140.28, "OneParent": 140.28, "Family": 140.28 },
+    },
+    dentalVisionHearing2Pricing: {
+      name: "DVH $1,500 Max",
+      note: "Choose one DVH option.",
+      "18-39": { "Individual": 43.82, "IndividualAndSpouse": 139.86, "OneParent": 139.86, "Family": 139.86 },
+      "40-54": { "Individual": 46.48, "IndividualAndSpouse": 145.28, "OneParent": 145.28, "Family": 145.28 },
+      "55-64": { "Individual": 50.40, "IndividualAndSpouse": 153.19, "OneParent": 153.19, "Family": 153.19 },
+      "65-74": { "Individual": 54.39, "IndividualAndSpouse": 161.10, "OneParent": 161.10, "Family": 161.10 },
+      "75-85": { "Individual": 62.56, "IndividualAndSpouse": 185.26, "OneParent": 185.26, "Family": 185.26 },
+    },
+    dentalVisionHearing3Pricing: {
+      name: "DVH $3,000 Max",
+      note: "Choose one DVH option.",
+      "18-39": { "Individual": 52.73, "IndividualAndSpouse": 168.85, "OneParent": 168.85, "Family": 168.85 },
+      "40-54": { "Individual": 57.23, "IndividualAndSpouse": 175.10, "OneParent": 175.10, "Family": 175.10 },
+      "55-64": { "Individual": 65.22, "IndividualAndSpouse": 189.01, "OneParent": 189.01, "Family": 189.01 },
+      "65-74": { "Individual": 70.56, "IndividualAndSpouse": 208.75, "OneParent": 208.75, "Family": 208.75 },
+      "75-85": { "Individual": 81.13, "IndividualAndSpouse": 240.40, "OneParent": 240.40, "Family": 240.40 },
+    },
+    dentalVisionHearing4Pricing: {
+      name: "DVH $5,000 Max",
+      note: "Choose one DVH option.",
+      "18-39": { "Individual": 65.22, "IndividualAndSpouse": 213.91, "OneParent": 213.91, "Family": 213.91 },
+      "40-54": { "Individual": 70.56, "IndividualAndSpouse": 224.58, "OneParent": 224.58, "Family": 224.58 },
+      "55-64": { "Individual": 79.38, "IndividualAndSpouse": 242.24, "OneParent": 242.24, "Family": 242.24 },
+      "65-74": { "Individual": 85.13, "IndividualAndSpouse": 253.73, "OneParent": 253.73, "Family": 253.73 },
+      "75-85": { "Individual": 95.71, "IndividualAndSpouse": 274.89, "OneParent": 274.89, "Family": 274.89 },
+    },
+  },
+
+  OK: {
+    cancerPackagePricing: {
+      name: 'Cancer Package',
+      note: "Only Available if not using Group Cancer Plan",
+      "20-39": { "Individual": 4.05, "IndividualAndSpouse": 6.75, "OneParent": 4.60, "Family": 7.60 },
+      "40-44": { "Individual": 5.15, "IndividualAndSpouse": 8.95, "OneParent": 5.95, "Family": 9.75 },
+      "45-49": { "Individual": 6.80, "IndividualAndSpouse": 11.90, "OneParent": 7.30, "Family": 12.45 },
+      "50-54": { "Individual": 8.95, "IndividualAndSpouse": 15.45, "OneParent": 9.20, "Family": 16.20 },
+      "55-59": { "Individual": 10.50, "IndividualAndSpouse": 18.50, "OneParent": 11.00, "Family": 19.5 },
+      "60-64": { "Individual": 13.25, "IndividualAndSpouse": 23.25, "OneParent": 13.50, "Family": 23.75 },
+      "65-69": { "Individual": 16.00, "IndividualAndSpouse": 28.00, "OneParent": 16.25, "Family": 28.5 },
+      "70-74": { "Individual": 18.25, "IndividualAndSpouse": 32.00, "OneParent": 18.50, "Family": 32.25 },
+      "75-79": { "Individual": 18.75, "IndividualAndSpouse": 33.00, "OneParent": 19.00, "Family": 33.25 },
+      "80-84": { "Individual": 19.25, "IndividualAndSpouse": 33.75, "OneParent": 19.50, "Family": 34.0 }
+    },
+    heartStrokePackagePricing: {
+      name: 'Heart & Stroke Package',
+      "20-39": { "Individual": 3.85, "IndividualAndSpouse": 6.35, "OneParent": 4.15, "Family": 6.60 },
+      "40-44": { "Individual": 5.25, "IndividualAndSpouse": 8.80, "OneParent": 5.50, "Family": 9.10 },
+      "45-49": { "Individual": 6.90, "IndividualAndSpouse": 11.85, "OneParent": 7.15, "Family": 12.15 },
+      "50-54": { "Individual": 8.80, "IndividualAndSpouse": 15.40, "OneParent": 9.10, "Family": 15.70 },
+      "55-59": { "Individual": 10.25, "IndividualAndSpouse": 18.00, "OneParent": 10.50, "Family": 18.25 },
+      "60-64": { "Individual": 13.25, "IndividualAndSpouse": 23.25, "OneParent": 13.50, "Family": 23.50 },
+      "65-69": { "Individual": 16.75, "IndividualAndSpouse": 29.50, "OneParent": 17.00, "Family": 29.75 },
+      "70-74": { "Individual": 21.25, "IndividualAndSpouse": 37.50, "OneParent": 21.50, "Family": 37.75 },
+      "75-79": { "Individual": 26.00, "IndividualAndSpouse": 46.00, "OneParent": 26.25, "Family": 46.25 },
+      "80-84": { "Individual": 30.50, "IndividualAndSpouse": 53.75, "OneParent": 30.75, "Family": 54.00 }
+    },
+    accidentWithWellness1Pricing: {
+      name: 'Paid Accident 1 Unit',
+      note: "Only choose one Accident option.",
+      "18-69": { "Individual": 21.33, "IndividualAndSpouse": 31.83, "OneParent": 31.83, "Family": 42.33 }
+    },
+    accidentWithWellness2Pricing: {
+      name: 'Paid Accident 2 Units',
+      note: "Only choose one Accident option.",
+      "18-69": { "Individual": 25.00, "IndividualAndSpouse": 38.00, "OneParent": 38.00, "Family": 51.00 }
+    },
+    dentalVisionHearing1Pricing: {
+      name: "DVH $1,000 Max",
+      note: "Choose one DVH option.",
+      "18-39": { "Individual": 30.24, "IndividualAndSpouse": 96.79, "OneParent": 96.79, "Family": 96.79 },
+      "40-54": { "Individual": 32.74, "IndividualAndSpouse": 101.63, "OneParent": 101.63, "Family": 101.63 },
+      "55-64": { "Individual": 35.07, "IndividualAndSpouse": 106.54, "OneParent": 106.54, "Family": 106.54 },
+      "65-74": { "Individual": 37.57, "IndividualAndSpouse": 111.37, "OneParent": 111.37, "Family": 111.37 },
+      "75-85": { "Individual": 43.15, "IndividualAndSpouse": 128.03, "OneParent": 128.03, "Family": 128.03 },
+    },
+    dentalVisionHearing2Pricing: {
+      name: "DVH $1,500 Max",
+      note: "Choose one DVH option.",
+      "18-39": { "Individual": 39.98, "IndividualAndSpouse": 127.70, "OneParent": 127.70, "Family": 127.70 },
+      "40-54": { "Individual": 42.40, "IndividualAndSpouse": 132.61, "OneParent": 132.61, "Family": 132.61 },
+      "55-64": { "Individual": 45.98, "IndividualAndSpouse": 139.86, "OneParent": 139.86, "Family": 139.86 },
+      "65-74": { "Individual": 49.65, "IndividualAndSpouse": 147.11, "OneParent": 147.11, "Family": 147.11 },
+      "75-85": { "Individual": 57.06, "IndividualAndSpouse": 169.18, "OneParent": 169.18, "Family": 169.18 },
+    },
+    dentalVisionHearing3Pricing: {
+      name: "DVH $3,000 Max",
+      note: "Choose one DVH option.",
+      "18-39": { "Individual": 48.15, "IndividualAndSpouse": 154.19, "OneParent": 154.19, "Family": 154.19 },
+      "40-54": { "Individual": 52.23, "IndividualAndSpouse": 159.85, "OneParent": 159.85, "Family": 159.85 },
+      "55-64": { "Individual": 59.56, "IndividualAndSpouse": 172.60, "OneParent": 172.60, "Family": 172.60 },
+      "65-74": { "Individual": 64.39, "IndividualAndSpouse": 190.59, "OneParent": 190.59, "Family": 190.59 },
+      "75-85": { "Individual": 74.05, "IndividualAndSpouse": 219.50, "OneParent": 219.50, "Family": 219.50 },
+    },
+    dentalVisionHearing4Pricing: {
+      name: "DVH $5,000 Max",
+      note: "Choose one DVH option.",
+      "18-39": { "Individual": 60.64, "IndividualAndSpouse": 199.09, "OneParent": 199.09, "Family": 199.09 },
+      "40-54": { "Individual": 65.56, "IndividualAndSpouse": 208.92, "OneParent": 208.92, "Family": 208.92 },
+      "55-64": { "Individual": 73.72, "IndividualAndSpouse": 225.24, "OneParent": 225.24, "Family": 225.24 },
+      "65-74": { "Individual": 78.97, "IndividualAndSpouse": 235.74, "OneParent": 235.74, "Family": 235.74 },
+      "75-85": { "Individual": 88.63, "IndividualAndSpouse": 255.06, "OneParent": 255.06, "Family": 255.06 },
+    },
+  },
+
+  NV: {
+    cancerPackagePricing: {
+      name: 'Cancer Package',
+      note: "Only Available if not using Group Cancer Plan",
+      "20-39": { "Individual": 4.05, "IndividualAndSpouse": 6.75, "OneParent": 4.60, "Family": 7.60 },
+      "40-44": { "Individual": 5.15, "IndividualAndSpouse": 8.95, "OneParent": 5.95, "Family": 9.75 },
+      "45-49": { "Individual": 6.80, "IndividualAndSpouse": 11.90, "OneParent": 7.30, "Family": 12.45 },
+      "50-54": { "Individual": 8.95, "IndividualAndSpouse": 15.45, "OneParent": 9.20, "Family": 16.20 },
+      "55-59": { "Individual": 10.50, "IndividualAndSpouse": 18.50, "OneParent": 11.00, "Family": 19.5 },
+      "60-64": { "Individual": 13.25, "IndividualAndSpouse": 23.25, "OneParent": 13.50, "Family": 23.75 },
+      "65-69": { "Individual": 16.00, "IndividualAndSpouse": 28.00, "OneParent": 16.25, "Family": 28.5 },
+      "70-74": { "Individual": 18.25, "IndividualAndSpouse": 32.00, "OneParent": 18.50, "Family": 32.25 },
+      "75-79": { "Individual": 18.75, "IndividualAndSpouse": 33.00, "OneParent": 19.00, "Family": 33.25 },
+      "80-84": { "Individual": 19.25, "IndividualAndSpouse": 33.75, "OneParent": 19.50, "Family": 34.0 }
+    },
+    heartStrokePackagePricing: {
+      name: 'Heart & Stroke Package',
+      "20-39": { "Individual": 3.85, "IndividualAndSpouse": 6.35, "OneParent": 4.15, "Family": 6.60 },
+      "40-44": { "Individual": 5.25, "IndividualAndSpouse": 8.80, "OneParent": 5.50, "Family": 9.10 },
+      "45-49": { "Individual": 6.90, "IndividualAndSpouse": 11.85, "OneParent": 7.15, "Family": 12.15 },
+      "50-54": { "Individual": 8.80, "IndividualAndSpouse": 15.40, "OneParent": 9.10, "Family": 15.70 },
+      "55-59": { "Individual": 10.25, "IndividualAndSpouse": 18.00, "OneParent": 10.50, "Family": 18.25 },
+      "60-64": { "Individual": 13.25, "IndividualAndSpouse": 23.25, "OneParent": 13.50, "Family": 23.50 },
+      "65-69": { "Individual": 16.75, "IndividualAndSpouse": 29.50, "OneParent": 17.00, "Family": 29.75 },
+      "70-74": { "Individual": 21.25, "IndividualAndSpouse": 37.50, "OneParent": 21.50, "Family": 37.75 },
+      "75-79": { "Individual": 26.00, "IndividualAndSpouse": 46.00, "OneParent": 26.25, "Family": 46.25 },
+      "80-84": { "Individual": 30.50, "IndividualAndSpouse": 53.75, "OneParent": 30.75, "Family": 54.00 }
+    },
+    accidentWithWellness1Pricing: {
+      name: 'Paid Accident 1 Unit',
+      note: "Only choose one Accident option.",
+      "18-69": { "Individual": 21.33, "IndividualAndSpouse": 31.83, "OneParent": 31.83, "Family": 42.33 }
+    },
+    accidentWithWellness2Pricing: {
+      name: 'Paid Accident 2 Units',
+      note: "Only choose one Accident option.",
+      "18-69": { "Individual": 25.00, "IndividualAndSpouse": 38.00, "OneParent": 38.00, "Family": 51.00 }
+    },
+  },
+
+  CA: {
+    cancerPackagePricing: {
+      name: 'Cancer Package',
+      note: "Only Available if not using Group Cancer Plan",
+      "20-24": { "Individual": 4.15, "IndividualAndSpouse": 6.90, "OneParent": 4.70, "Family": 7.70 },
+      "25-29": { "Individual": 4.70, "IndividualAndSpouse": 7.70, "OneParent": 5.25, "Family": 8.55 },
+      "30-34": { "Individual": 5.50, "IndividualAndSpouse": 9.10, "OneParent": 6.05, "Family": 9.90 },
+      "35-39": { "Individual": 6.35, "IndividualAndSpouse": 10.45, "OneParent": 7.15, "Family": 11.30 },
+      "40-44": { "Individual": 7.45, "IndividualAndSpouse": 12.40, "OneParent": 8.25, "Family": 13.20 },
+      "45-49": { "Individual": 8.55, "IndividualAndSpouse": 14.30, "OneParent": 9.35, "Family": 15.15 },
+      "50-54": { "Individual": 9.90, "IndividualAndSpouse": 16.50, "OneParent": 10.45, "Family": 17.35 },
+      "55-59": { "Individual": 10.25, "IndividualAndSpouse": 17.00, "OneParent": 10.75, "Family": 17.50 },
+      "60-64": { "Individual": 11.50, "IndividualAndSpouse": 19.25, "OneParent": 11.75, "Family": 19.50 }
+    },
+    heartStrokePackagePricing: {
+      name: 'Heart & Stroke Package',
+      "20-24": { "Individual": 4.15, "IndividualAndSpouse": 6.90, "OneParent": 4.70, "Family": 7.70 },
+      "25-29": { "Individual": 4.95, "IndividualAndSpouse": 8.25, "OneParent": 5.50, "Family": 9.10 },
+      "30-34": { "Individual": 6.05, "IndividualAndSpouse": 10.20, "OneParent": 6.60, "Family": 11.00 },
+      "35-39": { "Individual": 7.45, "IndividualAndSpouse": 12.40, "OneParent": 8.25, "Family": 13.20 },
+      "40-44": { "Individual": 8.80, "IndividualAndSpouse": 14.60, "OneParent": 9.65, "Family": 15.40 },
+      "45-49": { "Individual": 9.65, "IndividualAndSpouse": 15.95, "OneParent": 10.45, "Family": 16.80 },
+      "50-54": { "Individual": 11.85, "IndividualAndSpouse": 19.80, "OneParent": 12.40, "Family": 20.65 },
+      "55-59": { "Individual": 13.00, "IndividualAndSpouse": 21.75, "OneParent": 13.50, "Family": 22.25 },
+      "60-64": { "Individual": 15.50, "IndividualAndSpouse": 25.75, "OneParent": 15.75, "Family": 26.00 }
+    },
+    accidentWithWellness1Pricing: {
+      name: 'Paid Accident 1 Unit',
+      note: "Only choose one Accident option.",
+      "18-69": { "Individual": 21.33, "IndividualAndSpouse": 31.83, "OneParent": 31.83, "Family": 42.33 }
+    },
+    accidentWithWellness2Pricing: {
+      name: 'Paid Accident 2 Units',
+      note: "Only choose one Accident option.",
+      "18-69": { "Individual": 25.00, "IndividualAndSpouse": 38.00, "OneParent": 38.00, "Family": 51.00 }
+    },
   }
 }
 
