@@ -17,7 +17,7 @@ const stateBasedPricing = {
       "60-64": { "Individual": 11.50, "IndividualAndSpouse": 19.25, "OneParent": 11.75, "Family": 19.50 },
       "65-69": { "Individual": 12.75, "IndividualAndSpouse": 21.25, "OneParent": 13.00, "Family": 21.50 },
       "70-74": { "Individual": 13.75, "IndividualAndSpouse": 23.00, "OneParent": 14.00, "Family": 23.25 },
-      "75-79": { "Individual": 14.50, "IndividualAndSpouse": 24.25, "OneParent": 14.75, "Family": 24.75 },
+      "75-79": { "Individual": 14.50, "IndividualAndSpouse": 24.25, "OneParent": 14.75, "Family": 24.50 },
       "80-84": { "Individual": 14.75, "IndividualAndSpouse": 24.50, "OneParent": 15.00, "Family": 24.75 }
     },
 
@@ -51,8 +51,8 @@ const stateBasedPricing = {
       '55-59': { 'Individual': 13.0, 'IndividualAndSpouse': 21.75, 'OneParent': 13.5, 'Family': 22.25 },
       '60-64': { 'Individual': 15.5, 'IndividualAndSpouse': 25.75, 'OneParent': 15.75, 'Family': 26.0 },
       '65-69': { 'Individual': 18.75, 'IndividualAndSpouse': 31.25, 'OneParent': 19.0, 'Family': 31.5 },
-      '70-74': { 'Individual': 22.5, 'IndividualAndSpouse': 37.0, 'OneParent': 22.5, 'Family': 37.25 },
-      '75-79': { 'Individual': 26.5, 'IndividualAndSpouse': 44.25, 'OneParent': 26.75, 'Family': 44.5 },
+      '70-74': { 'Individual': 22.25, 'IndividualAndSpouse': 37.00, 'OneParent': 22.5, 'Family': 37.25 },
+      '75-79': { 'Individual': 26.50, 'IndividualAndSpouse': 44.25, 'OneParent': 26.75, 'Family': 44.5 },
       '80-84': { 'Individual': 30.25, 'IndividualAndSpouse': 50.5, 'OneParent': 30.5, 'Family': 50.75 }
     },
 
