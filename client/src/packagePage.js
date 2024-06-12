@@ -63,6 +63,7 @@ const PackagePage = () => {
                         <option value="FL">Florida (FL)</option>
                         <option value="GA">Georgia (GA)</option>
                         <option value="IA">Iowa (IA)</option>
+                        <option value="KS">Kansas (KS)</option>
                         <option value="NV">Nevada (NV)</option>
                         <option value="OK">Oklahoma (OK)</option>
                         <option value="TX">Texas (TX)</option>                   
