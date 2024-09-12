@@ -159,21 +159,19 @@ const stateBasedPricing = {
 
     cancerPackagePricing: {
       name: 'Cancer Package',
-      note: "Only Available if not using Group Cancer Plan",
-      "20-24": { "Individual": 4.05, "IndividualAndSpouse": 6.75, "OneParent": 4.60, "Family": 7.60 },
-      "25-29": { "Individual": 4.30, "IndividualAndSpouse": 7.5, "OneParent": 5.10, "Family": 8.35 },
-      "30-34": { "Individual": 5.30, "IndividualAndSpouse": 8.75, "OneParent": 5.85, "Family": 9.60 },
-      "35-39": { "Individual": 6.05, "IndividualAndSpouse": 10.00, "OneParent": 6.85, "Family": 10.85 },
-      "40-44": { "Individual": 7.15, "IndividualAndSpouse": 11.95, "OneParent": 7.95, "Family": 12.75 },
-      "45-49": { "Individual": 8.30, "IndividualAndSpouse": 13.90, "OneParent": 9.05, "Family": 14.70 },
-      "50-54": { "Individual": 9.70, "IndividualAndSpouse": 16.20, "OneParent": 10.20, "Family": 16.95 },
-      "55-59": { "Individual": 10.25, "IndividualAndSpouse": 17.00, "OneParent": 10.75, "Family": 17.5 },
-      "60-64": { "Individual": 11.5, "IndividualAndSpouse": 19.25, "OneParent": 11.75, "Family": 19.0 },
-      "65-69": { "Individual": 12.75, "IndividualAndSpouse": 21.25, "OneParent": 13.0, "Family": 21.5 },
-      "70-74": { "Individual": 13.75, "IndividualAndSpouse": 23.00, "OneParent": 14.0, "Family": 23.25 },
-      "75-79": { "Individual": 14.50, "IndividualAndSpouse": 24.25, "OneParent": 14.75, "Family": 24.75 },
-      "80-84": { "Individual": 14.75, "IndividualAndSpouse": 24.50, "OneParent": 15.0, "Family": 24.75 }
-    },
+      note: "Only available if not using cancer group plan",
+      "20-39": { "Individual": 4.05, "IndividualAndSpouse": 6.75, "OneParent": 4.60, "Family": 7.60 },
+      "40-44": { "Individual": 5.15, "IndividualAndSpouse": 8.95, "OneParent": 5.95, "Family": 9.75 },
+      "45-49": { "Individual": 6.80, "IndividualAndSpouse": 11.90, "OneParent": 7.30, "Family": 12.45 },
+      "50-54": { "Individual": 8.95, "IndividualAndSpouse": 15.45, "OneParent": 9.20, "Family": 16.20 },
+      "55-59": { "Individual": 10.50, "IndividualAndSpouse": 18.50, "OneParent": 11.00, "Family": 19.00 },
+      "60-64": { "Individual": 13.25, "IndividualAndSpouse": 23.25, "OneParent": 13.50, "Family": 23.75 },
+      "65-69": { "Individual": 16.00, "IndividualAndSpouse": 28.00, "OneParent": 16.25, "Family": 28.50 },
+      "70-74": { "Individual": 18.25, "IndividualAndSpouse": 32.00, "OneParent": 18.50, "Family": 32.25 },
+      "75-79": { "Individual": 18.75, "IndividualAndSpouse": 33.00, "OneParent": 19.00, "Family": 33.25 },
+      "80-84": { "Individual": 19.25, "IndividualAndSpouse": 33.75, "OneParent": 19.50, "Family": 34.00 }
+  },
+  
 
     // heartStrokeBasePolicyPricing: {
     //   name: "Heart & Stroke Base Policy",

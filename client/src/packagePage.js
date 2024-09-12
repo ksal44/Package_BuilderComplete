@@ -69,7 +69,6 @@ const PackagePage = () => {
                         <option value="TX">Texas (TX)</option>                   
                         <option value="LA">Lousiana (LA)</option>
                         <option value="MS">Mississippi (MS)</option>
-                        
                     </select>
                     <input
                         className='input'
