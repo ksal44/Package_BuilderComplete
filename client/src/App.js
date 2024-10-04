@@ -24,7 +24,7 @@ useEffect(() => {
     <Router>
     <div>
     <Routes>
-          <Route path="/" element={<HomePage />} />
+          <Route path="/" element={<HomePage message={message}/>} />
           <Route path="/signin" element={<SignInPage />} />
           <Route path="/company-tracker" element={<CompanyTrackerPage />} />
           <Route path="/packages" element={<PackagePage />} />
