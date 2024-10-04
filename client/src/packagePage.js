@@ -15,7 +15,7 @@ const PackagePage = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault(); // Prevent the form from refreshing the page
-
+   
         // Define package functions with names for easy reference
         const packageFunctions = [
             { func: buildBronzePackage, name: 'Bronze' },
