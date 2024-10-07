@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
 import { buildBronzePackage, buildSilverPackage, buildGoldPackage, buildDiamondPackage, selectBestPackage } from './functions';
 import PackageEditor from './packageEditor';
-import './packagePage1.css'
-import logo from './images/logo.png'
+import './packagePage1.css';
 
 const PackagePage = () => {
     const [state, setState] = useState('FL');
@@ -43,16 +42,6 @@ const PackagePage = () => {
     return (
         //whole page till I have more pages and the header and nav can be static on App.js
         <div className='whole-page'>
-            <header className="header">
-                <img src={logo} alt="Empower Insurance Group Logo" className="header-logo" />
-            </header>
-            <nav className="navbar">
-                <ul>
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/agent-reports">Agent Reports</a></li>
-                    <li><a href="/package-builder">Package Builder</a></li>
-                </ul>
-            </nav>
             <div className='main-layout'>
                 <form className='input-form' onSubmit={handleSubmit}>
                     <select className='input' value={state} onChange={(e) => setState(e.target.value)}>

@@ -7,6 +7,7 @@ import SignInPage from './SignInPage';
 import CompanyTrackerPage from './CompanyTrackerPage';
 import { AuthProvider } from './AuthContext';
 import ProtectedRoute from './ProtectedRoute';
+import logo from './images/logo.png';
 // import { buildBronzePackage, buildSilverPackage, buildGoldPackage } from './functions';
 
 function App() {
@@ -23,6 +24,17 @@ function App() {
   }, []);
 
   return (
+    <div className='whole-page'>
+    <header className="header">
+        <img src={logo} alt="Empower Insurance Group Logo" className="header-logo" />
+    </header>
+    <nav className="navbar">
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/agent-reports">Agent Reports</a></li>
+            <li><a href="/package-builder">Package Builder</a></li>
+        </ul>
+    </nav>
     <AuthProvider>
       <Router>
         <div>
@@ -35,7 +47,7 @@ function App() {
         </div>
       </Router>
     </AuthProvider>
-
+    </div>
   );
 }
 
