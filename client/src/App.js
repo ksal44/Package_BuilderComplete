@@ -1,53 +1,77 @@
 import React, { useEffect, useState } from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import './App.css';
 import PackagePage from './packagePage';
 import HomePage from './HomePage';
 import SignInPage from './SignInPage';
 import CompanyTrackerPage from './CompanyTrackerPage';
+import AppointmentSchedulerPage from './AppointmentSchedulerPage'; // Import new page
 import { AuthProvider } from './AuthContext';
+import Navbar from './Navbar';
 import ProtectedRoute from './ProtectedRoute';
 import logo from './images/logo.png';
-// import { buildBronzePackage, buildSilverPackage, buildGoldPackage } from './functions';
 
 function App() {
-  const [message, setMessage] = useState('')
+  const [message, setMessage] = useState('');
 
   useEffect(() => {
     fetch('/api/myfunction')
-      .then(response => response.text())
-      .then(data => {
-        console.log(data, "app is Listening!!!!!");
-        setMessage(data);  // Store the fetched message in state
-      })
-      .catch(error => console.error('Error fetching data:', error));
+      .then((response) => response.text())
+      .then((data) => setMessage(data))
+      .catch((error) => console.error('Error fetching data:', error));
   }, []);
 
   return (
-    <div className='whole-page'>
-    <header className="header">
-        <img src={logo} alt="Empower Insurance Group Logo" className="header-logo" />
-    </header>
-    <nav className="navbar">
-        <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/agent-reports">Agent Reports</a></li>
-            <li><a href="/package-builder">Package Builder</a></li>
-        </ul>
-    </nav>
     <AuthProvider>
       <Router>
-        <div>
-          <Routes>
-            <Route path="/signin" element={<SignInPage />} />
-            <Route path="/" element={<ProtectedRoute element={<HomePage message={message} />} />} />
-            <Route path="/packages" element={<ProtectedRoute element={<PackagePage />} />} />
-            <Route path="/company-tracker" element={<ProtectedRoute element={<CompanyTrackerPage />} />} />
-          </Routes>
+        <div className="whole-page">
+          <header className="header">
+            <img src={logo} alt="Empower Insurance Group Logo" className="header-logo" />
+          </header>
+
+          <Navbar />
+
+          <div className="content">
+            <Routes>
+              <Route path="/signin" element={<SignInPage />} />
+              <Route 
+                path="/" 
+                element={
+                  <ProtectedRoute>
+                    <HomePage message={message} />
+                  </ProtectedRoute>
+                } 
+              />
+              <Route 
+                path="/packages" 
+                element={
+                  <ProtectedRoute>
+                    <PackagePage />
+                  </ProtectedRoute>
+                } 
+              />
+              <Route 
+                path="/company-tracker" 
+                element={
+                  <ProtectedRoute>
+                    <CompanyTrackerPage />
+                  </ProtectedRoute>
+                } 
+              />
+              <Route 
+                path="/appointment-scheduler" 
+                element={
+                  <ProtectedRoute>
+                    <AppointmentSchedulerPage />
+                  </ProtectedRoute>
+                } 
+              />
+              <Route path="*" element={<Navigate to="/" />} />
+            </Routes>
+          </div>
         </div>
       </Router>
     </AuthProvider>
-    </div>
   );
 }
 

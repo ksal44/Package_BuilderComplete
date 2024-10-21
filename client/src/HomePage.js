@@ -1,25 +1,25 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { useAuth } from './AuthContext';
+import './HomePage.css'; // Optional CSS
 
 function HomePage() {
-  const { logout } = useAuth();
 
   return (
-    <div>
+    <div className="homepage-container">
       <h1>Welcome to the Home Page</h1>
-      
 
-        <nav>
-          <ul>
-            <li><Link to="/packages">Package Builder</Link></li>
-            <li><Link to="/company-tracker">Company Tracker</Link></li>
-          </ul>
-        </nav>
-        <button onClick={logout}>Log Out</button>
+      <nav className="home-nav">
+        <ul>
+          <li><Link to="/packages">Package Builder</Link></li>
+          <li><Link to="/company-tracker">Company Tracker</Link></li>
+        </ul>
+      </nav>
+
+      <div className="schedule-box">
+        <Link to="/appointment-scheduler">Schedule Census Meeting</Link>
       </div>
+    </div>
   );
-
 }
 
 export default HomePage;

@@ -1,0 +1,52 @@
+/* Navbar container */
+.navbar {
+    display: flex;
+    align-items: center; /* Center everything vertically */
+    justify-content: space-between; /* Space out links and button */
+    background-color: #4CAF50;
+    padding: 10px 30px; /* Add extra padding for the navbar */
+    font-family: Arial, sans-serif;
+    box-sizing: border-box; /* Ensure padding is included in width calculation */
+  }
+  
+  /* Navbar links list */
+  .navbar-links {
+    display: flex;
+    align-items: center; /* Vertically center the links */
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  /* Individual link styling */
+  .navbar-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+  
+  .navbar-links a:hover {
+    color: #ddd;
+  }
+  
+  /* Logout button aligned to the far right with proper spacing */
+  .logout-button {
+    background-color: white;
+    color: #4CAF50;
+    border: none;
+    padding: 10px 20px; /* Add padding for better appearance */
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-left: auto; /* Push button to the far right */
+    margin-right: 10px; /* Add margin to ensure it doesn't touch the edge */
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .logout-button:hover {
+    background-color: #45a049;
+    color: white;
+  }
+  
