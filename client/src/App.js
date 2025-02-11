@@ -40,7 +40,7 @@ function App() {
                   <ProtectedRoute>
                     <HomePage message={message} />
                   </ProtectedRoute>
-                } 
+                }
               />
               <Route 
                 path="/packages" 
